@@ -18,6 +18,11 @@ let score = 20;
 
 document.querySelector(".number").textContent = secretNumber;
 
+
+document.querySelector(".again").addEventListener('click', function() {
+    location.reload();
+});
+
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.guess').value);
     console.log(guess, typeof guess);
